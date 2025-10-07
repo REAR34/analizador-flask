@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Analizador de Archivos CSV/Excel</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>📊 Analizador de Archivos CSV/Excel</h1>
+
+    ...
+    <form id="upload-form" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="file" accept=".csv,.xlsx" required>
+        <button type="submit">Subir y analizar</button>
+    </form>
+    
+    <button id="download-button" style="display: none; margin-bottom: 20px;">
+        ⬇️ Descargar Datos Limpios (CSV)
+    </button>
+...
+
+
+    <div id="resultado">
+        <h2>Esperando archivo para análisis...</h2>
+    </div>
+
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

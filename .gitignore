@@ -1,0 +1,13 @@
+Entorno de Python
+
+.venv
+venv
+pycache
+Archivos de datos generados localmente
+
+data.db
+uploads/
+Archivos de sistema/temporales
+
+.DS_Store
+*.pyc

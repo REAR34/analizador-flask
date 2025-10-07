@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 30px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#resultado, #resultado pre {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+/* Estilos para la tabla*/
+#summary-table {
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#summary-table th, #summary-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#summary-table th {
+  background-color: #5d5d5d;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+#summary-table td:first-child { 
+  text-align: left;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+#summary-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#summary-table tbody tr:hover {
+  background-color: #e6e6e6;
+}
