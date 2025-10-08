@@ -85,11 +85,11 @@ def download_cleaned_data():
         df = pd.read_sql_query("SELECT * FROM datos", conn)
         conn.close()
 
-        # 2. Crear un buffer de bytes en memoria (evita guardar un archivo temporal)
+        # 2. Creamos un espacio para guardar el archivo convertido de forma temporal
         output = io.BytesIO()
 
-        # 3. Escribir el DataFrame limpio en formato CSV en el buffer
-        # (Puede cambiar a df.to_excel(output, index=False) si prefiere XLSX)
+        # 3. Escribir el DataFrame limpio
+        # (Se puede cambiar a df.to_excel(output, index=False) si se desea XLSX)
         df.to_csv(output, index=False, encoding='utf-8')
         output.seek(0)
 
